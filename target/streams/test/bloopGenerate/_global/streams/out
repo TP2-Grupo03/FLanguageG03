@@ -1,0 +1,4 @@
+[debug] [root-test] Classpath dependencies List()
+[debug] [root-test] Dependencies from configurations List(root)
+[debug] Bloop wrote the configuration of project 'root-test' to 'C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\.bloop\root-test.json'
+[success] Generated .bloop\root-test.json
