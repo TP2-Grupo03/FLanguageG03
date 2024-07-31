@@ -891,3 +891,168 @@ SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@2cff53d
 2024.07.30 16:11:28 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\src\main\scala\br\unb\cic\flang\Monad.scala. Using presentation compiler with project's scala-library version: 3.3.3
 2024.07.30 16:11:33 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\src\main\scala\br\unb\cic\flang\Monad.scala. Using presentation compiler with project's scala-library version: 3.3.3
 2024.07.30 16:11:40 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\src\main\scala\br\unb\cic\flang\Monad.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:16:47 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\src\main\scala\br\unb\cic\flang\Monad.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:16:53 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\src\main\scala\br\unb\cic\flang\Expressions.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:16:53 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\src\main\scala\br\unb\cic\flang\Expressions.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:16:55 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:16:55 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:16:56 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\src\main\scala\br\unb\cic\flang\Declarations.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:16:56 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\src\main\scala\br\unb\cic\flang\Declarations.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:17:07 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:17:07 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:17:17 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\src\main\scala\br\unb\cic\flang\Monad.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:17:21 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:17:27 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\src\test\scala\br\unb\cic\flang\InterpreterTest.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:17:27 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\src\test\scala\br\unb\cic\flang\InterpreterTest.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:17:38 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\src\test\scala\br\unb\cic\flang\InterpreterTest.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:17:40 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\src\test\scala\br\unb\cic\flang\InterpreterTest.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:17:47 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\src\main\scala\br\unb\cic\flang\Monad.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:17:49 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\src\main\scala\br\unb\cic\flang\Monad.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:18:06 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\src\main\scala\br\unb\cic\flang\Monad.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:19:35 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\src\main\scala\br\unb\cic\flang\Monad.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:19:37 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\src\main\scala\br\unb\cic\flang\Monad.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:20:12 WARN  no build target for: C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\src\main\scala\br\unb\cic\flang\Monad.scala
+2024.07.30 16:20:12 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\src\main\scala\br\unb\cic\flang\Monad.scala. Using presentation compiler with project's scala-library version: 3.3.3
+jul. 30, 2024 4:20:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTÊNCIA: Unmatched cancel notification for request id 133
+2024.07.30 16:20:12 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\src\main\scala\br\unb\cic\flang\Monad.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:20:55 WARN  no build target for: C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\src\main\scala\br\unb\cic\flang\Monad.scala
+2024.07.30 16:20:55 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\src\main\scala\br\unb\cic\flang\Monad.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:20:59 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\src\test\scala\br\unb\cic\flang\InterpreterTest.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:21:42 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:22:27 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:22:27 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:22:27 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:22:28 WARN  no build target for: C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\build.sbt
+2024.07.30 16:22:28 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.30 16:22:35 INFO  running 'C:\Users\marcu\AppData\Local\Coursier\cache\arc\https\github.com\adoptium\temurin17-binaries\releases\download\jdk-17%252B35\OpenJDK17-jdk_x64_windows_hotspot_17_35.zip\jdk-17+35\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\marcu\AppData\Local\Temp\metals4418186101591644055\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.07.30 16:22:43 INFO  [info] welcome to sbt 1.10.0 (Eclipse Adoptium Java 17)
+2024.07.30 16:22:46 INFO  [info] loading settings for project flanguageg03-build-build-build from metals.sbt ...
+2024.07.30 16:22:47 INFO  [info] loading project definition from C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\project\project\project
+2024.07.30 16:22:51 INFO  [info] loading settings for project flanguageg03-build-build from metals.sbt ...
+2024.07.30 16:22:51 INFO  [info] loading project definition from C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\project\project
+2024.07.30 16:23:00 INFO  [success] Generated .bloop\flanguageg03-build-build.json
+2024.07.30 16:23:00 INFO  [success] Total time: 9 s, completed 30 de jul. de 2024 16:23:00
+2024.07.30 16:23:02 INFO  [info] loading settings for project flanguageg03-build from metals.sbt,plugins.sbt ...
+2024.07.30 16:23:02 INFO  [info] loading project definition from C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\project
+2024.07.30 16:23:05 INFO  [success] Generated .bloop\flanguageg03-build.json
+2024.07.30 16:23:05 INFO  [success] Total time: 4 s, completed 30 de jul. de 2024 16:23:05
+2024.07.30 16:23:09 INFO  [info] loading settings for project root from build.sbt ...
+2024.07.30 16:23:09 INFO  [info] set current project to FLanguage (in build file:/C:/Users/marcu/Desktop/Emanuel/UnB/Materias/2024.1/TP2/FLanguageG03/)
+2024.07.30 16:23:10 INFO  [success] Generated .bloop\root.json
+2024.07.30 16:23:10 INFO  [success] Generated .bloop\root-test.json
+2024.07.30 16:23:10 INFO  [success] Total time: 1 s, completed 30 de jul. de 2024 16:23:11
+2024.07.30 16:23:11 INFO  time: ran 'sbt bloopInstall' in 36s
+2024.07.30 16:23:11 INFO  Attempting to connect to the build server...
+2024.07.30 16:23:16 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\.metals\bsp.trace.json or C:\Users\marcu\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.07.30 16:23:16 INFO  Attempting to connect to the build server...
+2024.07.30 16:23:16 INFO  Attempting to connect to the build server...
+2024.07.30 16:23:16 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\project\project\.metals\bsp.trace.json or C:\Users\marcu\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.07.30 16:23:17 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\project\.metals\bsp.trace.json or C:\Users\marcu\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.07.30 16:23:17 INFO  time: Connected to build server in 6.36s
+2024.07.30 16:23:17 INFO  Connected to Build server: Bloop v1.6.0
+2024.07.30 16:23:16 INFO  time: Imported build in 0.3s
+2024.07.30 16:23:18 INFO  running doctor check
+2024.07.30 16:23:18 INFO  java targets: root, flanguageg03-build-build, root-test, flanguageg03-build
+2024.07.30 16:23:20 INFO  compiling root (4 scala sources)
+2024.07.30 16:23:25 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.07.30 16:23:32 INFO  time: compiled root in 11s
+2024.07.30 16:23:50 INFO  time: indexed workspace in 32s
+2024.07.30 16:23:50 INFO  compiling root-test (1 scala source)
+2024.07.30 16:23:54 INFO  time: compiled root-test in 3.69s
+2024.07.30 16:24:44 INFO  time: code lens generation in 1.56s
+2024.07.30 16:24:44 INFO  time: code lens generation in 2.16s
+jul. 30, 2024 4:29:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+ADVERTÊNCIA: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "git:/c%3A/Users/marcu/Desktop/Emanuel/UnB/Materias/2024.1/TP2/FLanguageG03/build.sbt?%7B%22path%22%3A%22c%3A%5C%5CUsers%5C%5Cmarcu%5C%5CDesktop%5C%5CEmanuel%5C%5CUnB%5C%5CMaterias%5C%5C2024.1%5C%5CTP2%5C%5CFLanguageG03%5C%5Cbuild.sbt%22%2C%22ref%22%3A%22~%22%7D"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "git" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:131)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:188)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:756)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:753)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:696)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:43)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+jul. 30, 2024 4:37:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+ADVERTÊNCIA: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "git:/c%3A/Users/marcu/Desktop/Emanuel/UnB/Materias/2024.1/TP2/FLanguageG03/build.sbt?%7B%22path%22%3A%22c%3A%5C%5CUsers%5C%5Cmarcu%5C%5CDesktop%5C%5CEmanuel%5C%5CUnB%5C%5CMaterias%5C%5C2024.1%5C%5CTP2%5C%5CFLanguageG03%5C%5Cbuild.sbt%22%2C%22ref%22%3A%22~%22%7D"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "git" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:131)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:188)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:756)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:753)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:696)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:43)
+	at jdk.internal.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2024.07.31 14:33:15 INFO  Started: Metals version 1.3.4 in folders 'C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03' for client Visual Studio Code 1.91.1.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@25984c7]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@35f5c55c]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@25984c7]
+2024.07.31 14:33:20 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+jul. 31, 2024 2:33:21 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMAÇÕES: Unsupported notification method: $/setTrace
+2024.07.31 14:33:21 INFO  no build target found for C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.31 14:33:21 INFO  Attempting to connect to the build server...
+2024.07.31 14:33:27 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\.metals\bsp.trace.json or C:\Users\marcu\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.07.31 14:33:27 INFO  Attempting to connect to the build server...
+2024.07.31 14:33:27 INFO  Attempting to connect to the build server...
+2024.07.31 14:33:27 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\project\project\.metals\bsp.trace.json or C:\Users\marcu\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.07.31 14:33:27 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\marcu\Desktop\Emanuel\UnB\Materias\2024.1\TP2\FLanguageG03\project\.metals\bsp.trace.json or C:\Users\marcu\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.07.31 14:33:27 INFO  time: Connected to build server in 6.24s
+2024.07.31 14:33:27 INFO  Connected to Build server: Bloop v1.6.0
+2024.07.31 14:33:27 INFO  time: Imported build in 0.24s
+2024.07.31 14:33:28 INFO  running doctor check
+2024.07.31 14:33:28 INFO  java targets: root, flanguageg03-build-build, root-test, flanguageg03-build
+2024.07.31 14:33:36 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.07.31 14:33:43 INFO  time: indexed workspace in 15s
+2024.07.31 14:33:47 INFO  time: code lens generation in 3.16s
+2024.07.31 14:33:47 INFO  time: code lens generation in 2.83s
+2024.07.31 14:33:47 INFO  time: code lens generation in 3.16s
+2024.07.31 14:43:44 INFO  compiling root (1 scala source)
+2024.07.31 14:43:47 INFO  time: compiled root in 2.42s
