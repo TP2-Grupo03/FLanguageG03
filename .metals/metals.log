@@ -5438,3 +5438,6 @@ ADVERTÊNCIA: Unmatched cancel notification for request id 716
 2024.08.01 13:53:17 INFO  Closing debug server tcp://0.0.0.0:60564
 2024.08.01 13:54:23 INFO  compiling root (1 scala source)
 2024.08.01 13:54:23 INFO  time: compiled root in 0.82s
+ago. 01, 2024 2:23:22 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMAÇÕES: Unsupported notification method: $/setTrace
+2024.08.01 14:24:05 INFO  compiling root (1 scala source)
