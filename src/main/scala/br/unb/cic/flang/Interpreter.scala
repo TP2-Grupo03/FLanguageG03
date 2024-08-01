@@ -24,4 +24,8 @@ object Interpreter {
       res <- eval(bodyS, declarations)
     } yield res
   }
+  
+  def runEval(expr: Expr, declarations: List[FDeclaration]): Either[String, Integer] = {
+    eval(expr, declarations).value.runA(Nil).value
+  }
 }
