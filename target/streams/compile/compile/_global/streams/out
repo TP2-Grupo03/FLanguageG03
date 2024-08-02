@@ -1,4 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0m/home/luricl/Documents/UnB/TP2/FLanguage/src/main/scala/br/unb/cic/flang/Interpreter.scala:7:8: not found: object Substitution[0m
-[0m[[0m[31merror[0m] [0m[0mimport Substitution._[0m
-[0m[[0m[31merror[0m] [0m[0m       ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
