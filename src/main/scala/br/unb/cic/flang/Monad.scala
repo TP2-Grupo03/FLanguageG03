@@ -35,12 +35,12 @@ package object MErr {
   def declareVar(name: String, value: Integer, state: S): S =
     (name, value) :: state
 
-def lookupVar(name: String, state: S): MError[Integer] = {
-  state match {
-    case List() => eh.raiseError(s"Variable $name not found")
-    case (n, v) :: tail if n == name => eh.pure(v)
-    case _ :: tail => lookupVar(name, tail)
+  def lookupVar(name: String, state: S): MError[Integer] = {
+    state match {
+      case List() => eh.raiseError(s"Variable $name not found")
+      case (n, v) :: tail if n == name => eh.pure(v)
+      case _ :: tail => lookupVar(name, tail)
+    }
   }
-}
 
 }
