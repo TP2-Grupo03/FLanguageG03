@@ -1,3 +1,5 @@
-[debug] not up to date. inChanged = true, force = false
-[debug] Updating ProjectRef(uri("file:/C:/Users/marcu/Desktop/Emanuel/UnB/Materias/2024.1/TP2/FLanguageG03/project/project/"), "flanguageg03-build-build")...
-[debug] Done updating ProjectRef(uri("file:/C:/Users/marcu/Desktop/Emanuel/UnB/Materias/2024.1/TP2/FLanguageG03/project/project/"), "flanguageg03-build-build")
+[0m[[0m[0mdebug[0m] [0m[0mnot up to date. inChanged = true, force = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mUpdating ProjectRef(uri("file:/home/luricl/Documents/UnB/TP2/FLanguage/project/project/"), "flanguage-build-build")...[0m
+[0m[[0m[0minfo[0m] [0m[0mFetching artifacts of flanguage-build-build[0m
+[0m[[0m[0minfo[0m] [0m[0mFetched artifacts of flanguage-build-build[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone updating ProjectRef(uri("file:/home/luricl/Documents/UnB/TP2/FLanguage/project/project/"), "flanguage-build-build")[0m

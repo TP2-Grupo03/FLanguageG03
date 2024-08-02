@@ -12,7 +12,7 @@ package object MErr {
 
   val eh = MonadError[MError, String]
 
-  //def pureMError[A](a :A): MError[A] = EitherT.right(State.pure[S,A](a))
+  // def pureMError[A](a :A): MError[A] = EitherT.right(State.pure[S,A](a))
 
   def assertError[A](m: MError[A]) : Boolean = {
     val stateresult : M[Either[String,A]]= m.value
