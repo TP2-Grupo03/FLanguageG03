@@ -1,0 +1,58 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, Some(842835dc-7b2a-485c-8c20-34cccf7b9a62), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 6 Scala sources to C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\target\scala-2.13\classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m6 deprecations (since 2.13.0); re-run with -deprecation for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\target\scala-2.13\test-classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSubstitutionTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32msubstitute x by CInt(5) in CInt(10)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the int constant 10.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32msubstitute x by CInt(5) in Id('x')[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the int constant 5.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32msubstitute x by CInt(5) in Id('y')[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return Id('y').[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32msubstitute x by CInt(5) in Add(CInt(10), Id('x'))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return Add(CInt(10), CInt(5))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32msubstitute x by CInt(5) in Add(CInt(10), Add(Id('x'), Id('x')))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return Add(CInt(10), Add(CInt(5), CInt(5)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mIfThenElseTests:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32meval IfThenElse(CBool(true), CInt(10), CInt(20))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 10[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32meval IfThenElse(CBool(false), CInt(10), CInt(20))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 20[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32meval IfThenElse(CBool(true), Add(CInt(5), CInt(5)), Mul(CInt(2), CInt(3)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 10[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32meval IfThenElse(CBool(false), Add(CInt(5), CInt(5)), Mul(CInt(2), CInt(3)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 6[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32meval IfThenElse(CBool(true), FApp('inc', CInt(10)), CInt(0))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 11[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32meval IfThenElse(CBool(false), CInt(0), FApp('inc', CInt(10)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 11[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mInterpreterTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32meval CInt(5)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an integer value 5.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32meval Add(CInt(5), CInt(10)) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an integer value 15.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32meval Add(CInt(5), Add(CInt(5), CInt(10))) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an integer value 20.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32meval Mul(CInt(5), CInt(10))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an integer value 50[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32meval FApp(inc, CInt(99)) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an integer value 100[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32meval FApp(foo, CInt(10)) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should raise an error.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32meval Add(CInt(5), FApp(bug, CInt(10))) [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should raise an error.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32meval IfThenElse(CBool(true), CInt(10), CInt(20))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 10[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32meval IfThenElse(CBool(false), CInt(10), CInt(20))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 20[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 386 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 20[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 3, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 20, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 1 s, completed 2 de ago de 2024 12:33:06[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
