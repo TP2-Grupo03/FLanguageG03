@@ -6,74 +6,86 @@ import MErr.eh._
 import Declarations._
 import Substitution._
 
-/**object Interpreter {
-  def eval(expr: Expr, declarations: List[FDeclaration]): MError[Integer] = expr match {
-    case CInt(v) => pure(v)
-    case Add(lhs, rhs) => for {
-      l <- eval(lhs, declarations)
-      r <- eval(rhs, declarations)
-    } yield l + r
-    case Mul(lhs, rhs) => for {
-      l <- eval(lhs, declarations)
-      r <- eval(rhs, declarations)
-    } yield l * r
-    case Id(v) => raiseError("Error evaluating an identifier.")
-    case App(n, arg) => for {
-      fdecl <- lookup(n, declarations)
-      bodyS = substitute(arg, fdecl.arg, fdecl.body)
-      res <- eval(bodyS, declarations)
-    } yield res
-  }
-  
-  def runEval(expr: Expr, declarations: List[FDeclaration]): Either[String, Integer] = {
-    eval(expr, declarations).value.runA(Nil).value
-  }
-}
-  */
 object Interpreter {
 
-  /** This implementation relies on a state monad.
-    *
-    * Here we replace the substitution function (that needs to traverse the AST
-    * twice during interpretation), by a 'global' state that contains the
-    * current 'bindings'. The bindings are pairs from names to integers.
-    *
-    * We only update the state when we are interpreting a function application.
-    * This implementation deals with sections 6.1 and 6.2 of the book
-    * "Programming Languages: Application and Interpretation". However, here we
-    * use a monad state, instead of passing the state explicitly as an agument
-    * to the eval function.
-    *
-    * Sections 6.3 and 6.4 improves this implementation. We will left such an
-    * improvements as an exercise.
-  */
-  def eval(expr: Expr, declarations: List[FDeclaration]): MError[Integer] =
+  def eval(expr: Expr, declarations: List[FDeclaration]): MError[Value] =
     expr match {
-      case CInt(v) => pure(v)
+      case CInt(v) => pure(IntValue(v))
+      case CBool(v) => pureBool(BoolValue(v))
       case Add(lhs, rhs) =>
-        bind(eval(lhs, declarations))({ l =>
-          bind(eval(rhs, declarations))({ r => pure(l + r) })
-        })
+        for {
+          l <- eval(lhs, declarations)
+          r <- eval(rhs, declarations)
+          res <- (l, r) match {
+            case (IntValue(lv), IntValue(rv)) => pure(IntValue(lv + rv))
+            case _ => raiseError("Add requires both arguments to be integers")
+          }
+        } yield res
       case Mul(lhs, rhs) =>
-        bind(eval(lhs, declarations))({ l =>
-          bind(eval(rhs, declarations))({ r => pure(l * r) })
-        })
+        for {
+          l <- eval(lhs, declarations)
+          r <- eval(rhs, declarations)
+          res <- (l,r) match{
+            case ((IntValue(lv), IntValue(rv))) => pure(IntValue(lv * rv))
+            case _ => raiseError("Add requires both arguments to be integers")
+          }
+        }yield res 
+      case And(lhs, rhs) => 
+        for{
+          l <- eval(lhs, declarations)
+          r<- eval(rhs, declarations)
+          res<- (l,r) match{
+            case ((BoolValue(lv), BoolValue(rv)))=> pureBool(BoolValue(lv && rv))
+            case _ => raiseError("Add requires both arguments to be booleans")
+          }
+        }yield res
+      case Or(lhs, rhs) => 
+        for{
+          l <- eval(lhs, declarations)
+          r <- eval(rhs, declarations)
+          res <- (l,r) match{
+            case ((BoolValue(lv), BoolValue(rv)))=> pureBool(BoolValue(lv || rv))
+            case _ => raiseError("Add requires both arguments to be booleans")
+          }
+        }yield res
+      case Not(expr) => 
+        for{
+          v <- eval(expr, declarations)
+          res <- v match{
+            case (BoolValue(v)) => pureBool(BoolValue(!v))
+            case _ => raiseError("Add requires both arguments to be booleans")
+          }
+        }yield res
       case Id(name) =>
       for {
         state <- get()
         value <- lookupVar(name, state)
-      } yield value
+      }yield value
       case App(name, arg) => {
         for {
-          fdecl <- lookup(name, declarations) // Obter a declaração da função
-          value <- eval(arg, declarations) // Avaliar o argumento da função
-          state <- get() // Obter o estado atual
-          _ <- put(declareVar(fdecl.arg, value, state)) // Atualizar o estado com o novo valor
-          result <- eval(fdecl.body, declarations) // Avaliar o corpo da função com o novo estado
+          fdecl <- lookup(name, declarations) 
+          value <- eval(arg, declarations) 
+          state <- get() 
+          _ <- put(declareVar(fdecl.arg, value, state)) 
+          result <- eval(fdecl.body, declarations) 
         } yield result
       }
-    }
-  def runEval(expr: Expr, declarations: List[FDeclaration]): Either[String, Integer] = {
-    eval(expr, declarations).value.runA(Nil).value
+      case IfThenElse(cond, ifExpr, elseExpr) => for{
+        c <- eval(cond,declarations)
+        res <- c match{
+          case BoolValue(value) => if(value) eval(ifExpr, declarations) else eval(elseExpr, declarations)
+          case IntValue(value) => raiseError("Requires a boolean value")
+        }
+    }yield res
   }
+
+  def runEval(expr: Expr, declarations: List[FDeclaration]): Either[String, Any] = {
+    eval(expr, declarations).value.runA(Nil).value match {
+      case Right(IntValue(value)) => Right(value)
+      case Right(BoolValue(value)) => Right(value)
+      case Right(_) => Left("Unexpected value type")
+      case Left(error) => Left(error)
+    }
+}
+
 }

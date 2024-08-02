@@ -16,5 +16,4 @@ object Declarations {
     case (f@FDeclaration(n, a, b))::_ if n == name => pure(f)
     case _::fs => lookup(name, fs)  
   }
-
 }

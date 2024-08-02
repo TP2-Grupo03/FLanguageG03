@@ -1,5 +1,5 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(br.unb.cic.flang.SubstitutionTest, org.scalatest.tools.Framework$$anon$1@523a7552, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(br.unb.cic.flang.InterpreterTest, org.scalatest.tools.Framework$$anon$1@523a7552, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(br.unb.cic.flang.SubstitutionTest, org.scalatest.tools.Framework$$anon$1@20a2bf23, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(br.unb.cic.flang.InterpreterTest, org.scalatest.tools.Framework$$anon$1@20a2bf23, false, [SuiteSelector])[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mSubstitutionTest:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32msubstitute x by CInt(5) in CInt(10)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return the int constant 10.[0m[0m
@@ -26,10 +26,28 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should raise an error.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32meval CInt(5)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return an integer value 5.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 1 second, 206 milliseconds.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 12[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32meval IfThenElse(true, CInt(5), CInt(10))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an integer value 5[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32meval IfThenElse(false, CInt(5), CInt(10))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an integer value 10[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32meval And(CBool(true), CBool(false))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a boolean value false[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32meval Or(CBool(true), CBool(false))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a boolean value true[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32meval Not(CBool(true))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a boolean value false[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32meval IfThenElse(App(bug, 10), CInt(5), CInt(10))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should raise an error[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32meval And(CBool(true), App(bug, 10))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should raise an error[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32meval Or(CBool(true), App(bug, 10))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should raise an error[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32meval Not(App(bug, 10))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should raise an error[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 1 second, 316 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 21[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 2, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 12, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 21, failed 0, canceled 0, ignored 0, pending 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	br.unb.cic.flang.SubstitutionTest[0m
