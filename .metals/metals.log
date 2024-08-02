@@ -10547,3 +10547,135 @@ INFORMAÇÕES: Unsupported notification method: $/setTrace
 2024.08.02 13:28:55 INFO  Shutting down server
 2024.08.02 13:28:55 INFO  shutting down Metals
 2024.08.02 13:28:55 INFO  Exiting server
+2024.08.02 13:29:13 INFO  Started: Metals version 1.3.5 in folders 'C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03' for client Visual Studio Code 1.92.0.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@7f6d99dc]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@1bd3971c]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@7f6d99dc]
+2024.08.02 13:29:14 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.08.02 13:29:14 INFO  Attempting to connect to the build server...
+2024.08.02 13:29:14 ERROR Starting the bsp launcher for bloop...
+2024.08.02 13:29:14 ERROR Opening a bsp server connection with 'bsp --protocol tcp --port 34664'...
+2024.08.02 13:29:14 ERROR Waiting for the bsp connection to come up...
+2024.08.02 13:29:14 ERROR error: The command bsp --protocol tcp --port 34664 returned with an error
+2024.08.02 13:29:14 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\marcu\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.14\scala-library-2.13.14.jar doesn't exist!
+2024.08.02 13:29:14 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\marcu\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.14\scala-library-2.13.14.jar doesn't exist!
+2024.08.02 13:29:14 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\marcu\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-compiler\2.13.14\scala-compiler-2.13.14.jar doesn't exist!
+2024.08.02 13:29:14 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\marcu\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-compiler\2.13.14\scala-compiler-2.13.14.jar doesn't exist!
+2024.08.02 13:29:14 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\marcu\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-reflect\2.13.14\scala-reflect-2.13.14.jar doesn't exist!
+2024.08.02 13:29:14 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\marcu\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-reflect\2.13.14\scala-reflect-2.13.14.jar doesn't exist!
+2024.08.02 13:29:14 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\marcu\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\io\github\java-diff-utils\java-diff-utils\4.12\java-diff-utils-4.12.jar doesn't exist!
+2024.08.02 13:29:14 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\marcu\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\io\github\java-diff-utils\java-diff-utils\4.12\java-diff-utils-4.12.jar doesn't exist!
+2024.08.02 13:29:14 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\marcu\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jline\jline\3.25.1\jline-3.25.1.jar doesn't exist!
+2024.08.02 13:29:14 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\marcu\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jline\jline\3.25.1\jline-3.25.1.jar doesn't exist!
+2024.08.02 13:29:14 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\marcu\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\net\java\dev\jna\jna\5.14.0\jna-5.14.0.jar doesn't exist!
+2024.08.02 13:29:14 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\marcu\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\net\java\dev\jna\jna\5.14.0\jna-5.14.0.jar doesn't exist!
+2024.08.02 13:29:14 ERROR > [0m[31m[E][0m Failed to load project from c:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\.bloop\root.json
+2024.08.02 13:29:14 ERROR error: The launcher failed to establish a bsp connection, aborting...
+2024.08.02 13:29:14 ERROR Failed to connect with build server, no functionality will work.
+java.lang.RuntimeException: The server did not start, got FailedToOpenBspConnection
+	at bloop.launcher.LauncherMain.failPromise$1(Launcher.scala:92)
+	at bloop.launcher.LauncherMain.runLauncher(Launcher.scala:119)
+	at scala.meta.internal.metals.BloopServers$$anon$2.run(BloopServers.scala:385)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.08.02 13:30:26 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Declarations.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:30:27 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Declarations.scala. Using presentation compiler with project's scala-library version: 3.3.3
+ago. 02, 2024 1:30:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTÊNCIA: Unmatched cancel notification for request id 1
+ago. 02, 2024 1:30:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTÊNCIA: Unmatched cancel notification for request id 6
+2024.08.02 13:30:27 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Declarations.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:30:28 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Expressions.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:30:28 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Expressions.scala. Using presentation compiler with project's scala-library version: 3.3.3
+ago. 02, 2024 1:30:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTÊNCIA: Unmatched cancel notification for request id 12
+2024.08.02 13:30:29 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Expressions.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:30:31 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Expressions.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:30:31 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:30:31 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:30:39 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:30:39 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:30:39 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:30:42 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:30:42 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:30:42 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:30:42 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:30:42 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:30:43 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:30:44 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:30:46 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:30:48 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:31:00 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:31:00 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:31:10 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\test\scala\br\unb\cic\flang\IfThenElseTest.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:31:10 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+ago. 02, 2024 1:31:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTÊNCIA: Unmatched cancel notification for request id 132
+2024.08.02 13:31:10 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\test\scala\br\unb\cic\flang\IfThenElseTest.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:31:10 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\test\scala\br\unb\cic\flang\IfThenElseTest.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:31:11 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\test\scala\br\unb\cic\flang\InterpreterTest.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:31:10 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:31:11 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\test\scala\br\unb\cic\flang\InterpreterTest.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:31:10 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\test\scala\br\unb\cic\flang\InterpreterTest.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:31:11 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\test\scala\br\unb\cic\flang\SubstitutionTest.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:31:10 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:31:11 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\test\scala\br\unb\cic\flang\SubstitutionTest.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:31:11 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\test\scala\br\unb\cic\flang\InterpreterTest.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:31:10 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\test\scala\br\unb\cic\flang\InterpreterTest.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:31:13 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\test\scala\br\unb\cic\flang\SubstitutionTest.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:31:15 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\test\scala\br\unb\cic\flang\SubstitutionTest.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:31:15 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:31:15 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:31:16 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:31:26 INFO  Shutting down server
+2024.08.02 13:31:26 INFO  shutting down Metals
+2024.08.02 13:31:26 INFO  Exiting server
+2024.08.02 13:31:34 INFO  Started: Metals version 1.3.5 in folders 'C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03' for client Visual Studio Code 1.92.0.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@5e09ea44]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@69d3a2aa]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@5e09ea44]
+2024.08.02 13:31:34 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.08.02 13:31:35 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Main.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:31:35 INFO  Attempting to connect to the build server...
+2024.08.02 13:31:36 ERROR Starting the bsp launcher for bloop...
+2024.08.02 13:31:36 ERROR Opening a bsp server connection with 'bsp --protocol tcp --port 37338'...
+2024.08.02 13:31:36 ERROR Waiting for the bsp connection to come up...
+2024.08.02 13:31:36 ERROR error: The command bsp --protocol tcp --port 37338 returned with an error
+2024.08.02 13:31:36 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\marcu\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.14\scala-library-2.13.14.jar doesn't exist!
+2024.08.02 13:31:36 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\marcu\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.14\scala-library-2.13.14.jar doesn't exist!
+2024.08.02 13:31:36 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\marcu\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-compiler\2.13.14\scala-compiler-2.13.14.jar doesn't exist!
+2024.08.02 13:31:36 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\marcu\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-compiler\2.13.14\scala-compiler-2.13.14.jar doesn't exist!
+2024.08.02 13:31:36 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\marcu\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-reflect\2.13.14\scala-reflect-2.13.14.jar doesn't exist!
+2024.08.02 13:31:36 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\marcu\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-reflect\2.13.14\scala-reflect-2.13.14.jar doesn't exist!
+2024.08.02 13:31:36 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\marcu\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\io\github\java-diff-utils\java-diff-utils\4.12\java-diff-utils-4.12.jar doesn't exist!
+2024.08.02 13:31:36 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\marcu\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\io\github\java-diff-utils\java-diff-utils\4.12\java-diff-utils-4.12.jar doesn't exist!
+2024.08.02 13:31:36 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\marcu\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jline\jline\3.25.1\jline-3.25.1.jar doesn't exist!
+2024.08.02 13:31:36 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\marcu\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jline\jline\3.25.1\jline-3.25.1.jar doesn't exist!
+2024.08.02 13:31:36 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\marcu\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\net\java\dev\jna\jna\5.14.0\jna-5.14.0.jar doesn't exist!
+2024.08.02 13:31:36 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\marcu\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\net\java\dev\jna\jna\5.14.0\jna-5.14.0.jar doesn't exist!
+2024.08.02 13:31:36 ERROR > [0m[31m[E][0m Failed to load project from c:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\.bloop\root.json
+2024.08.02 13:31:36 ERROR error: The launcher failed to establish a bsp connection, aborting...
+2024.08.02 13:31:35 ERROR Failed to connect with build server, no functionality will work.
+java.lang.RuntimeException: The server did not start, got FailedToOpenBspConnection
+	at bloop.launcher.LauncherMain.failPromise$1(Launcher.scala:92)
+	at bloop.launcher.LauncherMain.runLauncher(Launcher.scala:119)
+	at scala.meta.internal.metals.BloopServers$$anon$2.run(BloopServers.scala:385)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.08.02 13:31:36 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Main.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:31:38 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:31:38 INFO  time: code lens generation in 2.44s
+ago. 02, 2024 1:31:42 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMAÇÕES: Unsupported notification method: $/setTrace

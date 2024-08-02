@@ -1,70 +1,44 @@
-[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\target\scala-2.13\classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = C:\Users\jklui\Desktop\FLanguageG03\target\scala-2.13\classes.bak[0m
 [0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	And$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Main$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	App.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	package.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	CBool$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	FApp$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	IfThenElse.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Substitution$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	And.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Not$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Or.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	CBool.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	CInt$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Interpreter.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Declarations.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Not.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Add$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	FDeclaration.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Expr.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Mul.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Mul$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	FApp.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	IfThenElse$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Declarations$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Id$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Add.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	CInt.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Interpreter$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Or$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	App$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	package$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Substitution.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	FDeclaration$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Id.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	And$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Main$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	App.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	package.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	CBool$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	FApp$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	IfThenElse.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Substitution$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	And.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Not$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Or.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	CBool.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	CInt$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Interpreter.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Declarations.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Not.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Add$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	FDeclaration.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Expr.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Mul.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Mul$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	FApp.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	IfThenElse$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Declarations$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Id$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Add.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	CInt.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Interpreter$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Or$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	App$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	package$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Substitution.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	FDeclaration$.class[0m
@@ -104,4 +78,4 @@
 [0m[[0m[0mdebug[0m] [0m[0m	Substitution.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	FDeclaration$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Id.class[0m
-[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\target\scala-2.13\classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: C:\Users\jklui\Desktop\FLanguageG03\target\scala-2.13\classes.bak[0m
