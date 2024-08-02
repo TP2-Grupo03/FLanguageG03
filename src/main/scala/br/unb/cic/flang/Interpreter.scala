@@ -7,78 +7,76 @@ import Declarations._
 import Substitution._
 
 object Interpreter {
-
-  def eval(expr: Expr, declarations: List[FDeclaration]): MError[Value] =
-    expr match {
-      case CInt(v) => pure(IntValue(v))
-      case CBool(v) => pureBool(BoolValue(v))
-      case Add(lhs, rhs) =>
-        for {
-          l <- eval(lhs, declarations)
-          r <- eval(rhs, declarations)
-          res <- (l, r) match {
-            case (IntValue(lv), IntValue(rv)) => pure(IntValue(lv + rv))
-            case _ => raiseError("Add requires both arguments to be integers")
-          }
-        } yield res
-      case Mul(lhs, rhs) =>
-        for {
-          l <- eval(lhs, declarations)
-          r <- eval(rhs, declarations)
-          res <- (l,r) match{
-            case ((IntValue(lv), IntValue(rv))) => pure(IntValue(lv * rv))
-            case _ => raiseError("Add requires both arguments to be integers")
-          }
-        }yield res 
-      case And(lhs, rhs) => 
-        for{
-          l <- eval(lhs, declarations)
-          r<- eval(rhs, declarations)
-          res<- (l,r) match{
-            case ((BoolValue(lv), BoolValue(rv)))=> pureBool(BoolValue(lv && rv))
-            case _ => raiseError("Add requires both arguments to be booleans")
-          }
-        }yield res
-      case Or(lhs, rhs) => 
-        for{
-          l <- eval(lhs, declarations)
-          r <- eval(rhs, declarations)
-          res <- (l,r) match{
-            case ((BoolValue(lv), BoolValue(rv)))=> pureBool(BoolValue(lv || rv))
-            case _ => raiseError("Add requires both arguments to be booleans")
-          }
-        }yield res
-      case Not(expr) => 
-        for{
-          v <- eval(expr, declarations)
-          res <- v match{
-            case (BoolValue(v)) => pureBool(BoolValue(!v))
-            case _ => raiseError("Add requires both arguments to be booleans")
-          }
-        }yield res
-      case Id(name) =>
+// eval utiliza encapsulamento e desencapsulamento de ValueType, refatoração mudando o retorno para MError[Any]
+// pode ser interessante ( a testar se funciona)
+  def eval(expr: Expr, declarations: List[FDeclaration]): MError[ValueType] = expr match {
+    // casos que usam Integer
+    case CInt(v) => pure(intToValue(v))
+    case Add(lhs, rhs) =>
+      for {
+        l <- eval(lhs, declarations)
+        r <- eval(rhs, declarations)
+        lv <- ValuetoInt(l)
+        rv <- ValuetoInt(r)
+        result <- pure(intToValue(lv + rv))
+      } yield result
+    case Mul(lhs, rhs) =>
+      for {
+        l <- eval(lhs, declarations)
+        r <- eval(rhs, declarations)
+        lv <- ValuetoInt(l)
+        rv <- ValuetoInt(r)
+        result <- pure(intToValue(lv * rv))
+      } yield result
+    
+    
+// casos que usam Boolean
+    case CBool(v) => pure(boolToValue(v))
+    case And(lhs, rhs) =>
+      for {
+        l <- eval(lhs, declarations)
+        r <- eval(rhs, declarations)
+        lv <- ValuetoBoolean(l)
+        rv <- ValuetoBoolean(r)
+        result <- pure(boolToValue(lv && rv))
+      } yield result
+    case Or(lhs, rhs) =>
+      for {
+        l <- eval(lhs, declarations)
+        r <- eval(rhs, declarations)
+        lv <- ValuetoBoolean(l)
+        rv <- ValuetoBoolean(r)
+        result <- pure(boolToValue(lv || rv))
+      } yield result
+    case Not(expr) =>
+      for {
+        v <- eval(expr, declarations)
+        b <- ValuetoBoolean(v)
+        result <- pure(boolToValue(!b))
+      } yield result
+    case IfThenElse(cond, tExpr, fExpr) =>
+      for {
+        condVal <- eval(cond, declarations)
+        condBool <- ValuetoBoolean(condVal)
+        result <- if (condBool) eval(tExpr, declarations) else eval(fExpr, declarations)
+      } yield result
+    // casos que lidam diretamente com ValueType
+    case Id(name) =>
       for {
         state <- get()
         value <- lookupVar(name, state)
-      }yield value
-      case App(name, arg) => {
-        for {
-          fdecl <- lookup(name, declarations) 
-          value <- eval(arg, declarations) 
-          state <- get() 
-          _ <- put(declareVar(fdecl.arg, value, state)) 
-          result <- eval(fdecl.body, declarations) 
-        } yield result
-      }
-      case IfThenElse(cond, ifExpr, elseExpr) => for{
-        c <- eval(cond,declarations)
-        res <- c match{
-          case BoolValue(value) => if(value) eval(ifExpr, declarations) else eval(elseExpr, declarations)
-          case IntValue(value) => raiseError("Requires a boolean value")
-        }
-    }yield res
-  }
+      } yield value
+    case App(name, arg) =>
+      for {
+        fdecl <- lookup(name, declarations)
+        value <- eval(arg, declarations)
+        state <- get()
+        _ <- put(declareVar(fdecl.arg, value, state))
+        result <- eval(fdecl.body, declarations)
+      } yield result
 
+  }
+// função que desencapsula o MonadTransformer,deve ser chamada em testes ao invés de eval
   def runEval(expr: Expr, declarations: List[FDeclaration]): Either[String, Any] = {
     eval(expr, declarations).value.runA(Nil).value match {
       case Right(IntValue(value)) => Right(value)
@@ -86,6 +84,5 @@ object Interpreter {
       case Right(_) => Left("Unexpected value type")
       case Left(error) => Left(error)
     }
-}
-
+  }
 }
