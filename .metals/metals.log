@@ -10679,3 +10679,48 @@ java.lang.RuntimeException: The server did not start, got FailedToOpenBspConnect
 2024.08.02 13:31:38 INFO  time: code lens generation in 2.44s
 ago. 02, 2024 1:31:42 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFORMAÇÕES: Unsupported notification method: $/setTrace
+ago. 02, 2024 1:32:30 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMAÇÕES: Unsupported notification method: $/setTrace
+2024.08.02 13:33:16 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Main.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:33:23 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Main.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:33:23 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\MErr.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:33:23 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\MErr.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:33:23 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\MErr.scala. Using presentation compiler with project's scala-library version: 3.3.3
+ago. 02, 2024 1:33:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTÊNCIA: Unmatched cancel notification for request id 22
+2024.08.02 13:33:25 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\MErr.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:33:27 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\MErr.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:33:30 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\MErr.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:33:32 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\MErr.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:33:37 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\MErr.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:33:37 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:33:37 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:33:42 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:33:42 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\MErr.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:33:42 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\MErr.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:33:42 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\MErr.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:33:42 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Main.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:33:42 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Main.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:33:43 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:33:44 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+ago. 02, 2024 1:33:48 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMAÇÕES: Unsupported notification method: $/setTrace
+2024.08.02 13:34:04 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:34:04 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:34:04 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+ago. 02, 2024 1:38:28 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFORMAÇÕES: Unsupported notification method: $/setTrace
+2024.08.02 13:38:52 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:38:52 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:38:52 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:38:54 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Main.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:38:54 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:38:54 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:38:55 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:38:59 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:38:59 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Interpreter.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:39:01 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\MErr.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:39:01 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\MErr.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:39:04 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\MErr.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:39:04 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Main.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.02 13:39:04 INFO  no build target found for C:\Users\jklui\OneDrive\Documentos\GitHub\FLanguageG03\src\main\scala\br\unb\cic\flang\Main.scala. Using presentation compiler with project's scala-library version: 3.3.3
