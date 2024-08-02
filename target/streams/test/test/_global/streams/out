@@ -1,4 +1,4 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(br.unb.cic.flang.InterpreterTest, org.scalatest.tools.Framework$$anon$1@182005eb, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(br.unb.cic.flang.InterpreterTest, org.scalatest.tools.Framework$$anon$1@37557e0e, false, [SuiteSelector])[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mInterpreterTest:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32meval Add(CInt(5), CInt(10)) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return an integer value 15.[0m[0m
@@ -14,7 +14,7 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should raise an error.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32meval CInt(5)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return an integer value 5.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 420 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 353 milliseconds.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 7[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 7, failed 0, canceled 0, ignored 0, pending 0[0m[0m
