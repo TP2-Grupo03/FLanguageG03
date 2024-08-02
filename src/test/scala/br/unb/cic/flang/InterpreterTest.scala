@@ -14,11 +14,12 @@ class InterpreterTest extends AnyFlatSpec with should.Matchers {
   val bug = FDeclaration("bug", "x", Add(Id("y"), CInt(1)))
 
   val declarations = List(inc, bug)
+  val initialState: S = List()
 
-  "eval CInt(5)" should "return an integer value 5." in {
+  /**"eval CInt(5)" should "return an integer value 5." in {
     val c5 = CInt(5)
     runEval(c5, declarations) should be (Right(5))
-  }
+  }*/
 
   "eval Add(CInt(5), CInt(10)) " should "return an integer value 15." in {
     val c5  = CInt(5)
@@ -57,5 +58,9 @@ class InterpreterTest extends AnyFlatSpec with should.Matchers {
     val add = Add(c5, app)
     assertError(eval(add, declarations)) should be (true)
   }
-  
+  "eval CInt(5)" should "return an integer value 5." in {
+    val c5 = CInt(5)
+    val (res, _) = runState(eval(c5, declarations))(initialState)
+    res should be (Right(5))
+  }
 }
