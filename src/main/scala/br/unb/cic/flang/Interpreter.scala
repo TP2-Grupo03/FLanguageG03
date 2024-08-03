@@ -4,7 +4,6 @@ import MErr._
 import MErr.eh._
 
 import Declarations._
-import Substitution._
 
 object Interpreter {
 // eval utiliza encapsulamento e desencapsulamento de ValueType, refatoração mudando o retorno para MError[Any]
