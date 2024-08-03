@@ -17,13 +17,13 @@
 
 ### Pré-requisitos
 
-* [Scala](https://www.scala-lang.org/download/): 
+* [Scala](https://www.scala-lang.org/download/) 
 
 Abra o prompt de comando e digite scala -version. Você deve ver a versão do Scala instalada.
 
-* SBT (Scala Build Tool): uma ferramenta de build projetada especificamente para projetos em Scala.
+* [SBT (Scala Build Tool)](https://www.scala-sbt.org/download.html): uma ferramenta de build projetada especificamente para projetos em Scala.
 
-https://www.scala-sbt.org/download.html
+
 
 
 ## Atividade 1
