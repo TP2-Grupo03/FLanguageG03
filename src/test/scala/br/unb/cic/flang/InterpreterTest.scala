@@ -16,11 +16,6 @@ class InterpreterTest extends AnyFlatSpec with should.Matchers {
   val declarations = List(inc, bug)
   val initialState: S = List()
 
-  /**"eval CInt(5)" should "return an integer value 5." in {
-    val c5 = CInt(5)
-    runEval(c5, declarations) should be (Right(5))
-  }*/
-
   "eval Add(CInt(5), CInt(10)) " should "return an integer value 15." in {
     val c5  = CInt(5)
     val c10 = CInt(10)
@@ -116,5 +111,46 @@ class InterpreterTest extends AnyFlatSpec with should.Matchers {
     val expr = Not(app)
     assertError(eval(expr, declarations)) should be (true)
   }
+
+  "eval And(CInt(10), CInt(5)))" should "raise an error" in {
+    val c10 = CInt(10)
+    val c5 = CInt(5)
+    val expr = And(c5, c10)
+    assertError(eval(expr, declarations)) should be (true)
+  }
+
+  "eval Not(CInt(0))" should "raise an error" in {
+    val expr = Not(CInt(0))
+    assertError(eval(expr, declarations)) should be (true)
+  }
+
+  "eval App(inc, CInt(5))" should "return an integer value 6" in {
+    val expr = App("inc", CInt(5))
+    val (res, _) = runState(eval(expr, declarations))(initialState)
+    res should be (Right(IntValue(6)))
+  } 
+
+  "eval App(inc, CInt(4))" should "alter the state during evaluation" in {
+    val expr = App("inc", CInt(4))
+    val computation: MError[ValueType] = eval(expr, declarations)
+    val (res, finalState) = runState(computation)(initialState)
+    res should be(Right(IntValue(5)))
+    finalState should not be(initialState)
+  }
+
+  "eval Add(CInt(3), CInt(4))" should "not alter the state during evaluation" in {
+    val expr = Add(CInt(3), CInt(4))
+    val computation: MError[ValueType] = eval(expr, List())
+    val (res, finalState) = runState(computation)(initialState)
+    res should be(Right(IntValue(7)))
+    finalState should be(initialState)
+  }
+  
+  "eval App(inc, CBool(false))" should "raise an error and not alter the state during evaluation" in {
+    val expr = App("inc", CBool(false))
+    val res: Either[String, Any] = runEval(expr, declarations)
+    res should be (Left("Expected an integer, but got BoolValue(false)"))
+  }
+
 }
 

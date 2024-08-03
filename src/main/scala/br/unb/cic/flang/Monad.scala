@@ -9,6 +9,7 @@ package object MErr {
   sealed trait ValueType  // aqui criamos um sealed traid Valuetype que aceita somente Integer e Boolean
   case class BoolValue(value: Boolean) extends ValueType
   case class IntValue(value: Integer) extends ValueType
+  
   //funções referentes a encapsulamento e desencapsulamento de Valuetype e Integer e Boolean
   def intToValue(value: Integer): ValueType = IntValue(value)
   def boolToValue(value: Boolean): ValueType = BoolValue(value)
