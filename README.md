@@ -39,8 +39,11 @@ A branch criada foi chamada de [state-with-cats](https://github.com/TP2-Grupo03/
 Esta atividade envolveu a implementação de uma nova versão que usa uma stack de monads composta por uma State Monad e uma Error Monad, reutilizando as implementações dessas Monads da biblioteca Cats. A branch criada foi chamada de [state-and-eth-with-cats](https://github.com/TP2-Grupo03/FLanguageG03/tree/state-and-eh-with-cats).
 
 ## Atividade 3
+Nesta atividade, incluímos o suporte a uma nova expressão IfThenElse na versão State and EH with Cats da branch anterior, também com monad transformers. Além disso, elaboramos uma proposta para representar tipos booleanos na linguagem FLang, alteramos a representação intermediária (AST) e revisamos o interpretador.
+
 
 ## Atividade 4
+A última atividade envolveu a definição de uma sintaxe concreta para a linguagem FLang e a implementação de um parser seguindo a estratégia de parser combinators capaz de interpretar a sintaxe corretamente. Ela foi feita em cima da branch da atividade 3.
 
 # Fontes
 ## Atividade 1 e 2
