@@ -23,10 +23,12 @@ Abra o prompt de comando e digite scala -version. Você deve ver a versão do Sc
 
 * [SBT (Scala Build Tool)](https://www.scala-sbt.org/download.html): uma ferramenta de build projetada especificamente para projetos em Scala.
 
-
+* Cats: Biblioteca de Scala.
 
 
 ## Atividade 1
+A primeira atividade consiste em revisar a implementação da versão State, passando a usar a definição de Monad State descrita no Capítulo 9 do livro "Scala with Cats".
+
 
 ## Atividade 2
 
