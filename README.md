@@ -13,6 +13,11 @@
 
 ### Link do vídeo: (wip)
 
+###Objetivos
+
+Fazer os alunos se tornarem mais confortáveis com a linguagem de programação Scala, a escrita de testes automatizados com a biblioteca ScalaTest, e com os conceitos de Monads e Monad Transformers.
+
+
 ## Executando o Trabalho
 
 ### Pré-requisitos
@@ -23,7 +28,7 @@ Abra o prompt de comando e digite scala -version. Você deve ver a versão do Sc
 
 * [SBT (Scala Build Tool)](https://www.scala-sbt.org/download.html): uma ferramenta de build projetada especificamente para projetos em Scala.
 
-* Cats: Biblioteca de Scala.
+* Cats: A biblioteca Cats fornece abstrações para programação funcional em Scala, facilitando o uso de Monads, Functors e outras estruturas.
 
 
 ## Atividade 1
