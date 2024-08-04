@@ -28,7 +28,7 @@ Abra o prompt de comando e digite scala -version. Você deve ver a versão do Sc
 
 ## Atividade 1
 A primeira atividade consiste em revisar a implementação da versão State, passando a usar a definição de Monad State descrita no Capítulo 9 do livro "Scala with Cats".
-
+A branch criada foi chamada de [state-with-cats](https://github.com/TP2-Grupo03/FLanguageG03/tree/state-with-cats).
 
 ## Atividade 2
 
@@ -37,3 +37,5 @@ A primeira atividade consiste em revisar a implementação da versão State, pas
 ## Atividade 4
 
 ## Fontes
+
+* 
