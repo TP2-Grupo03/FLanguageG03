@@ -13,7 +13,7 @@
 
 ### Link do vídeo: (wip)
 
-###Objetivos
+## Objetivos
 
 Fazer os alunos se tornarem mais confortáveis com a linguagem de programação Scala, a escrita de testes automatizados com a biblioteca ScalaTest, e com os conceitos de Monads e Monad Transformers.
 
