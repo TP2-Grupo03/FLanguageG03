@@ -26,7 +26,7 @@ Fazer os alunos se tornarem mais confortáveis com a linguagem de programação 
 
 Abra o prompt de comando e digite scala -version. Você deve ver a versão do Scala instalada.
 
-* [SBT (Scala Build Tool)](https://www.scala-sbt.org/download.html): uma ferramenta de build projetada especificamente para projetos em Scala.
+* [SBT (Scala Build Tool)]([https://www.scala-sbt.org/download.html](https://www.scala-sbt.org/index.html)): uma ferramenta de build projetada especificamente para projetos em Scala.
 
 * Cats: A biblioteca Cats fornece abstrações para programação funcional em Scala, facilitando o uso de Monads, Functors e outras estruturas.
 
@@ -41,6 +41,18 @@ A branch criada foi chamada de [state-with-cats](https://github.com/TP2-Grupo03/
 
 ## Atividade 4
 
-## Fontes
+# Fontes
+## Atividade 1 e 2
+* https://scalawithcats.com/dist/scala-with-cats.html#the-state-monad
+* https://typelevel.org/cats-effect/docs/getting-started
+* https://www.youtube.com/watch?v=T8fhAHw9GM0
 
-* 
+## Atividade 3 
+* https://docs.scala-lang.org/overviews/scala-book/if-then-else-construct.html
+* https://docs.scala-lang.org/scala3/book/control-structures.html#the-ifthenelse-construct
+
+## Atividade 4
+* https://ruslanspivak.com/lsbasi-part7/
+* https://github.com/scala/scala-parser-combinators
+* https://github.com/scala/scala-parser-combinators/blob/main/docs/Getting_Started.md
+* https://enear.github.io/2016/03/31/parser-combinators/
