@@ -36,6 +36,7 @@ A primeira atividade consiste em revisar a implementação da versão State, pas
 A branch criada foi chamada de [state-with-cats](https://github.com/TP2-Grupo03/FLanguageG03/tree/state-with-cats).
 
 ## Atividade 2
+Esta atividade envolveu a implementação de uma nova versão que usa uma stack de monads composta por uma State Monad e uma Error Monad, reutilizando as implementações dessas Monads da biblioteca Cats. A branch criada foi chamada de [state-and-eth-with-cats](https://github.com/TP2-Grupo03/FLanguageG03/tree/state-and-eh-with-cats).
 
 ## Atividade 3
 
