@@ -39,7 +39,7 @@ package object MErr {
     }
   }
 
-  def pureInt[A](a: A) = ??? //usamos o método eh.pure que próvem da MonadError
+  // def pureInt[A](a: A) = ??? //usamos o método eh.pure que próvem da MonadError
   def pureBool[A](a: A): MError[A] = EitherT.right(State.pure(a)) // método eh.pure não aceita Boolean
   def bind[A, B](m: MError[A])(f: A => MError[B]): MError[B] = m.flatMap(f)
 
