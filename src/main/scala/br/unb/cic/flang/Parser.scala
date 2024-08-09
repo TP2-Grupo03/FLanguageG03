@@ -15,7 +15,7 @@ object FLangParser extends RegexParsers {
 
 
     // Parse numbers
-    def number: Parser[CInt] = """\d+""".r ^^ {
+    def number: Parser[CInt] = """(0|[1-9]\d*)""".r ^^ {
         num => CInt(num.toInt)
     }
 
@@ -30,7 +30,7 @@ object FLangParser extends RegexParsers {
     override val whiteSpace = "[ \t\r\f]+".r
 
     // Parse string
-    def string: Parser[String] = """[a-z]+""".r ^^ { _.toString }
+    def alpha: Parser[String] = """[a-zA-Z]""".r
 
     // Parse identifiers
     def identifier: Parser[Id] = """^[a-zA-Z_]\w*""".r ^^ { str => Id(str) }
@@ -49,8 +49,7 @@ object FLangParser extends RegexParsers {
             pairs.foldLeft(base)(Mul)
     }
 
-    // Parser para expressões completas, observando a ordem de precedência
-    def expr: Parser[Expr] = ifThenElse | term ~ rep("+" ~ term) ^^ {
+    def expr: Parser[Expr] =  functionApp | ifThenElse | term ~ rep("+" ~ term) ^^ {
         case base ~ list =>
             val pairs = list.collect { case "+" ~ right => right }
             pairs.foldLeft(base)(Add)
@@ -79,26 +78,13 @@ object FLangParser extends RegexParsers {
         case _ => throw new RuntimeException("Unexpected match in ifThenElse parser")
     }
 
-    // Parse da aplicação de uma função
-    // Lança o seguinte erro:
-    //
-    //[1.4] failure: '*' expected but '(' found
-    //
-    //inc(42)
-    def functionApp: Parser[Expr] = identifier ~ "(" ~ expr ~ ")" ^^ {
-        case Id(name) ~ "(" ~ arg ~ ")" => App(name, arg)
+    def functionApp: Parser[Expr] = alpha ~ "(" ~ expr ~ ")" ^^ {
+        case funName ~ "(" ~ arg ~ ")" => App(funName, arg)
         case _ => throw new RuntimeException("Unexpected match in functionApp parser")
     }
 
-    // Parse da declaração de uma função
-    // Erro:
-    // [1.25] failure: '(' expected but end of source found
-
-    // def increment(x) = x + 1
-    //                         ^
-    //
-    def declaration: Parser[FDeclaration] = "def" ~ string ~ "(" ~ string ~ ")" ~ "=" ~ expr ^^ {
-        case "def" ~ name ~ "(" ~ arg ~ ")" ~ "=" ~ body => FDeclaration(name, arg, body)
+    def declaration: Parser[FDeclaration] = "def" ~> alpha ~ ("(" ~> alpha <~ ")") ~ ("=" ~> expr) ^^ {
+        case name ~ arg ~ body => FDeclaration(name, arg, body)
         case _ => throw new RuntimeException("Unexpected match in declaration parser")
     }
 

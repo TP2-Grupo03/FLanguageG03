@@ -100,10 +100,10 @@ class ParserTests extends AnyFlatSpec with should.Matchers {
   }
   
   "A function application parser" should "parse function applications correctly" in {
-    // println(parseInput("inc(42)"))
+    println(parseInput("inc(42)"))
     parseInput("inc(42)") match {
       case Success(res, next) =>
-        res shouldEqual (List(), App("inc", CInt(42)))
+        res shouldEqual (declarations, App("inc", CInt(42)))
         next.atEnd shouldBe true 
       case _=> fail()
     }
