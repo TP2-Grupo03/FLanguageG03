@@ -14,19 +14,22 @@ import Declarations._
 object FLangParser extends RegexParsers {
 
 
+    // Parse numbers
     def number: Parser[CInt] = """\d+""".r ^^ {
         num => CInt(num.toInt)
     }
 
+    // Parse booleans
     def bool: Parser[CBool] = ("true" | "false") ^^ {
         case "true" => CBool(true)
         case "false" => CBool(false)
     }
 
+    // Ignora espaços em branco
     override def skipWhitespace: Boolean = true
-    // override val whiteSpace = "[\t\r\f]+".r
-    override val whiteSpace = """\s+""".r
+    override val whiteSpace = "[ \t\r\f]+".r
 
+    // Parse string
     def string: Parser[String] = """[a-z]+""".r ^^ { _.toString }
 
     // Parse identifiers
@@ -35,15 +38,18 @@ object FLangParser extends RegexParsers {
     // Parse expressions within parentheses
     def parens: Parser[Expr] = "(" ~> expr <~ ")"
 
-    // Basic units of expressions
+    // Unidades básicas do parser
+    // https://medium.com/@t.m.h.v.eijk/programming-in-scala-chapter-31-combinator-parsing-60732d17c162
     def factor: Parser[Expr] = number | bool | identifier | parens
 
+    // Parser para termos de uma adição
     def term: Parser[Expr] = factor ~ rep("*" ~ factor) ^^ {
         case base ~ list =>
             val pairs = list.collect { case "*" ~ right => right }
             pairs.foldLeft(base)(Mul)
     }
 
+    // Parser para expressões completas, observando a ordem de precedência
     def expr: Parser[Expr] = ifThenElse | term ~ rep("+" ~ term) ^^ {
         case base ~ list =>
             val pairs = list.collect { case "+" ~ right => right }
@@ -73,21 +79,34 @@ object FLangParser extends RegexParsers {
         case _ => throw new RuntimeException("Unexpected match in ifThenElse parser")
     }
 
+    // Parse da aplicação de uma função
+    // Lança o seguinte erro:
+    //
+    //[1.4] failure: '*' expected but '(' found
+    //
+    //inc(42)
     def functionApp: Parser[Expr] = identifier ~ "(" ~ expr ~ ")" ^^ {
         case Id(name) ~ "(" ~ arg ~ ")" => App(name, arg)
         case _ => throw new RuntimeException("Unexpected match in functionApp parser")
     }
 
+    // Parse da declaração de uma função
+    // Erro:
+    // [1.25] failure: '(' expected but end of source found
+
+    // def increment(x) = x + 1
+    //                         ^
+    //
     def declaration: Parser[FDeclaration] = "def" ~ string ~ "(" ~ string ~ ")" ~ "=" ~ expr ^^ {
         case "def" ~ name ~ "(" ~ arg ~ ")" ~ "=" ~ body => FDeclaration(name, arg, body)
         case _ => throw new RuntimeException("Unexpected match in declaration parser")
     }
 
-    // Parse a program with declarations and an expression
+    // Parse um programa completo com declarações e expressões
     def program: Parser[(List[FDeclaration], Expr)] = rep(declaration) ~ expr ^^ {
         case decls ~ e => (decls, e)
     }
 
-    // Parse a given input string
+    // Parse uma string de entrada
     def parseInput(input: String): ParseResult[(List[FDeclaration], Expr)] = parseAll(program, input)
 }

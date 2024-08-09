@@ -9,10 +9,6 @@ import FLangParser._
 
 class ParserTests extends AnyFlatSpec with should.Matchers {
 
-  val inc = FDeclaration("inc", "x", Add(Id("x"), CInt(1)))
-  val bug = FDeclaration("bug", "x", Add(Id("y"), CInt(1)))
-
-  val declarations = List(inc, bug)
 
   "An integer parser" should "parse integers correctly" in {
     parseInput("42") match {
@@ -92,23 +88,24 @@ class ParserTests extends AnyFlatSpec with should.Matchers {
     }
   }
 
-  // "A function declaration parser" should "parse function declarations correctly" in {
-  //   val incDecl = FDeclaration("increment", "x", Add(Id("x"), CInt(1)))
-  //   println(parseInput("def increment(x) = x + 1"))
-  //   parseInput("def increment(x) = x + 1") match {
-  //     case Success(res, next) =>
-  //       res shouldEqual (List(incDecl), incDecl)
-  //       next.atEnd shouldBe true 
-  //     case _=> fail()
-  //   }
-  // }
+  "A function declaration parser" should "parse function declarations correctly" in {
+    val incDecl = FDeclaration("increment", "x", Add(Id("x"), CInt(1)))
+    // println(parseInput("def increment(x) = x + 1"))
+    parseInput("def increment(x) = x + 1") match {
+      case Success(res, next) =>
+        res shouldEqual (List(incDecl), incDecl)
+        next.atEnd shouldBe true 
+      case _=> fail()
+    }
+  }
   
-  // "A function application parser" should "parse function applications correctly" in {
-  //   parseInput("inc(42)") match {
-  //     case Success(res, next) =>
-  //       res shouldEqual (declarations, App("inc", CInt(42)))
-  //       next.atEnd shouldBe true 
-  //     case _=> fail()
-  //   }
-  // }
+  "A function application parser" should "parse function applications correctly" in {
+    // println(parseInput("inc(42)"))
+    parseInput("inc(42)") match {
+      case Success(res, next) =>
+        res shouldEqual (List(), App("inc", CInt(42)))
+        next.atEnd shouldBe true 
+      case _=> fail()
+    }
+  }
 }
