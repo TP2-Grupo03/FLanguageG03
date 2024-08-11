@@ -11,101 +11,37 @@ class ParserTests extends AnyFlatSpec with should.Matchers {
 
 
   "An integer parser" should "parse integers correctly" in {
-    parseInput("42") match {
-      case Success(res, next) =>
-        res shouldEqual (List(), CInt(42))
-        next.atEnd shouldBe true 
-      case _=> fail()
-    }
+    parseInput("42") shouldEqual (List(), CInt(42))
   }
-
+  
   "A boolean parser" should "parse booleans correctly" in {
-    parseInput("true") match {
-      case Success(res, next) =>
-        res shouldEqual (List(), CBool(true))
-        next.atEnd shouldBe true 
-      case _=> fail()
-    }
-    parseInput("false") match {
-      case Success(res, next) =>
-        res shouldEqual (List(), CBool(false))
-        next.atEnd shouldBe true 
-      case _=> fail()
-    }
+    parseInput("true") shouldEqual (List(), CBool(true))
+    parseInput("false") shouldEqual (List(), CBool(false))
   }
 
   "An addition parser" should "parse addition expressions correctly" in {
-    parseInput("5 + 10") match {
-      case Success(res, next) =>
-        res shouldEqual (List(), Add(CInt(5), CInt(10)))
-        next.atEnd shouldBe true 
-      case _=> fail()
-    }
+    parseInput("5 + 10") shouldEqual (List(), Add(CInt(5), CInt(10)))
   }
 
   "A multiplication parser" should "parse multiplication expressions correctly" in {
-    parseInput("5 * 10") match {
-      case Success(res, next) =>
-        res shouldEqual (List(), Mul(CInt(5), CInt(10)))
-        next.atEnd shouldBe true 
-      case _=> fail()
-    }
+    parseInput("5 * 10")  shouldEqual (List(), Mul(CInt(5), CInt(10)))
   }
 
-  // "A logical AND parser" should "parse AND expressions correctly" in {
-  //   parseInput("true && false") match {
-  //     case Success(res, next) =>
-  //       res shouldEqual (List(), And(CBool(true), CBool(false)))
-  //       next.atEnd shouldBe true 
-  //     case _=> fail()
-  //   }
-  // }
-
-  // "A logical OR parser" should "parse OR expressions correctly" in {
-  //   parseInput("true || false") match {
-  //     case Success(res, next) =>
-  //       res shouldEqual (List(), Or(CBool(true), CBool(false)))
-  //       next.atEnd shouldBe true 
-  //     case _=> fail()
-  //   }
-  // }
-
-  // "A logical NOT parser" should "parse NOT expressions correctly" in {
-  //   parseInput("!true") match {
-  //     case Success(res, next) =>
-  //       res shouldEqual (List(), Not(CBool(true)))
-  //       next.atEnd shouldBe true 
-  //     case _=> fail()
-  //   }
-  // }
+  "A identifier parser" should "parse identifiers correctly" in {
+    parseInput("inc") shouldEqual (List(), Id("inc"))
+  }
 
   "An if-then-else parser" should "parse if-then-else expressions correctly" in {
-    parseInput("if true then 1 else 0") match {
-      case Success(res, next) =>
-        res shouldEqual (List(), IfThenElse(CBool(true), CInt(1), CInt(0)))
-        next.atEnd shouldBe true 
-      case _=> fail()
-    }
+    parseInput("if true then 1 else 0") shouldEqual (List(), IfThenElse(CBool(true), CInt(1), CInt(0)))
   }
 
   "A function declaration parser" should "parse function declarations correctly" in {
     val incDecl = FDeclaration("increment", "x", Add(Id("x"), CInt(1)))
-    // println(parseInput("def increment(x) = x + 1"))
-    parseInput("def increment(x) = x + 1") match {
-      case Success(res, next) =>
-        res shouldEqual (List(incDecl), incDecl)
-        next.atEnd shouldBe true 
-      case _=> fail()
-    }
+    parseInput("def increment(x) = x + 1 END") shouldEqual (List(incDecl), Id("END"))
   }
-  
+
   "A function application parser" should "parse function applications correctly" in {
-    println(parseInput("inc(42)"))
-    parseInput("inc(42)") match {
-      case Success(res, next) =>
-        res shouldEqual (declarations, App("inc", CInt(42)))
-        next.atEnd shouldBe true 
-      case _=> fail()
-    }
+    parseInput("inc(42)") shouldEqual (List(), App("inc", CInt(42)))
   }
+
 }
