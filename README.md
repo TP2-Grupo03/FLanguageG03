@@ -20,6 +20,18 @@ Fazer os alunos se tornarem mais confortáveis com a linguagem de programação 
 
 ## Executando o Trabalho
 
+- Execute testes com
+
+```
+sbt test
+```
+  
+- Compile o programa com  
+
+```
+sbt compile
+```
+
 ### Pré-requisitos
 
 * [Scala](https://www.scala-lang.org/download/) 
@@ -31,18 +43,18 @@ Abra o prompt de comando e digite scala -version. Você deve ver a versão do Sc
 * Cats: A biblioteca Cats fornece abstrações para programação funcional em Scala, facilitando o uso de Monads, Functors e outras estruturas.
 
 
-## Atividade 1
+## Atividade 1 (branch "state-with-cats")
 A primeira atividade consiste em revisar a implementação da versão State, passando a usar a definição de Monad State descrita no Capítulo 9 do livro "Scala with Cats".
 A branch criada foi chamada de [state-with-cats](https://github.com/TP2-Grupo03/FLanguageG03/tree/state-with-cats).
 
-## Atividade 2
+## Atividade 2 (branch "state-and-eh-with-cats")
 Esta atividade envolveu a implementação de uma nova versão que usa uma stack de monads composta por uma State Monad e uma Error Monad, reutilizando as implementações dessas Monads da biblioteca Cats. A branch criada foi chamada de [state-and-eth-with-cats](https://github.com/TP2-Grupo03/FLanguageG03/tree/state-and-eh-with-cats).
 
-## Atividade 3
+## Atividade 3 (branch "state-and-eh-ifthenelse-with-cats-v2")
 Nesta atividade, incluímos o suporte a uma nova expressão IfThenElse na versão State and EH with Cats da branch anterior, também com monad transformers. Além disso, elaboramos uma proposta para representar tipos booleanos na linguagem FLang, alteramos a representação intermediária (AST) e revisamos o interpretador. a [V1](https://github.com/TP2-Grupo03/FLanguageG03/tree/state-and-eh-ifthenelse-to-cats-v1) utiliza uma implementação mais complexa por não ter implementadas as funções relacionadas ao sealed trait ValueType (dificultando mais a compreensão do código), enquanto a [V2](https://github.com/TP2-Grupo03/FLanguageG03/tree/state-and-eh-ifthenelse-with-cats-v2) é a versão definitiva dessa branch. 
 
 
-## Atividade 4
+## Atividade 4 (branch "parser combinators")
 A última atividade envolveu a definição de uma sintaxe concreta para a linguagem FLang e a implementação de um parser seguindo a estratégia de parser combinators capaz de interpretar a sintaxe corretamente. Ela foi feita em cima da branch da atividade 3.
 
 # Fontes
