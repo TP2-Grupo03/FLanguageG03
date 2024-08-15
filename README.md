@@ -11,7 +11,8 @@
 * Tiago Cabral de Faria - 160146712
 * Victor de Andrade Arruda - 222001378
 
-### Link do vídeo: (wip)
+### [Link do vídeo](https://youtu.be/sdLPJr6ZyNY?si=911w0EpxsWaAUEhE)
+### [Link do repositório](https://github.com/TP2-Grupo03/FLanguageG03)
 
 ## Objetivos
 
